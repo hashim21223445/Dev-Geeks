@@ -26,7 +26,7 @@
     "dlv": "^1.1.3",
     "didyoumean": "^1.2.2",
     "electron-to-chromium": "^1.4.284",
-    "fast-glob": "^3.2.12",
+    "fast-glob": "^3.3.3",
     "binary-extensions": "^2.2.0",
     "fastq": "^1.13.0",
     "function-bind": "^1.1.1",
