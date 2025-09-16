@@ -9,7 +9,7 @@
   "author": "Rishit Pandey",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.27.2",
+    "axios": "^1.12.0",
     "cheerio": "^1.0.0-rc.12",
     "express": "^4.18.1",
     "nodemon": "^2.0.19"
