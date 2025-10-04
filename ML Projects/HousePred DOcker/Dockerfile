@@ -1,4 +1,4 @@
-FROM python:3.14.0rc2-slim-trixie 
+FROM python:3.14.0rc2-alpine3.22 
 COPY . /app
 WORKDIR /app
 RUN pip install -r requirements.txt
