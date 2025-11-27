@@ -13,7 +13,7 @@
     "@reduxjs/toolkit": "^1.9.5",
     "axios": "^1.12.0",
     "firebase": "^10.1.0",
-    "firebase-tools": "^13.0.0",
+    "firebase-tools": "^13.10.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-drag-drop-files": "^2.3.10",
