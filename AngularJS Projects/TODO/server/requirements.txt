@@ -23,4 +23,4 @@ requests==2.32.4
 six==1.16.0
 toml==0.10.2
 urllib3==2.5.0
-Werkzeug==3.0.6
+Werkzeug==3.1.4
