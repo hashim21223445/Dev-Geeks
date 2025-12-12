@@ -27,7 +27,7 @@
     "@ngrx/store": "^12.0.0",
     "@ngrx/store-devtools": "^12.0.0",
     "axios": "^1.12.0",
-    "express": "^4.21.2",
+    "express": "^4.22.0",
     "ngx-simple-modal": "^1.4.17",
     "path": "^0.12.7",
     "rxjs": "~6.6.0",
