@@ -3,3 +3,4 @@ sklearn
 fuzzywuzzy
 distance
 bs4
+urllib3>=2.6.3 # not directly required, pinned by Snyk to avoid a vulnerability
