@@ -12,7 +12,7 @@
     "react-dom": "^18.2.0",
     "react-elastic-carousel": "^0.11.5",
     "react-multi-carousel": "^2.8.3",
-    "react-router-dom": "^6.11.1",
+    "react-router-dom": "^6.30.3",
     "react-scripts": "5.0.1",
     "styled-components": "^5.3.10",
     "web-vitals": "^2.1.4"
