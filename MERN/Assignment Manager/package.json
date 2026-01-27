@@ -21,9 +21,9 @@
     "dotenv": "^10.0.0",
     "express": "^4.22.0",
     "mongoose": "^6.13.6",
-    "multer": "^1.4.2"
+    "multer": "^2.0.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.6"
+    "nodemon": "^2.0.17"
   }
 }
