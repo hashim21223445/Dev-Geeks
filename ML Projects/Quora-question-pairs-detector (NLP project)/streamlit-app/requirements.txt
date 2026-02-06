@@ -4,3 +4,4 @@ fuzzywuzzy
 distance
 bs4
 urllib3>=2.6.3 # not directly required, pinned by Snyk to avoid a vulnerability
+protobuf>=5.29.6 # not directly required, pinned by Snyk to avoid a vulnerability
