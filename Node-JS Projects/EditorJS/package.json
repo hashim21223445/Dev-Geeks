@@ -15,7 +15,7 @@
     "@editorjs/embed": "^2.5.3",
     "@editorjs/header": "^2.7.0",
     "@editorjs/list": "^1.8.0",
-    "parcel": "^2.8.3"
+    "parcel": "^2.16.4"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.3"
