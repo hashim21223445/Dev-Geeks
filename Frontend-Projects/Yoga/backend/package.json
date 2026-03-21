@@ -14,6 +14,6 @@
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "exprss": "^0.0.1-security",
-    "mongoose": "^6.11.3"
+    "mongoose": "^6.12.0"
   }
 }
