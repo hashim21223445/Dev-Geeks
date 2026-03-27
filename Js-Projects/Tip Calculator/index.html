@@ -85,7 +85,7 @@
     function calculateTip(){
         billAmount=parseFloat(document.getElementById('billAmount').value);
          tipPercentage=parseFloat(document.getElementById('tipPercentage').value);
-if(isNaN(billAmount) || isNaN(billAmount)){
+if(isNaN(billAmount) || isNaN(tipPercentage)){
     document.getElementById('tipAmount').innerText = 'Invalid amount, please try again';
 return 0;
 }
