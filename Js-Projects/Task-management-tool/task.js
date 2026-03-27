@@ -55,17 +55,17 @@ const add = (priority, task) => {
     let updatedData = []
     if(taskData){
         updatedData = taskData.tasks.map((taskElement) =>{
-            if(taskElement.priority == priority) {
-                return {"priority":taskElement.priority+1, "task":taskElement.task}
+            if(Number(taskElement.priority) === Number(priority)) {
+                return {"priority": Number(taskElement.priority) + 1, "task":taskElement.task}
             }else {
-                return {"priority":`${taskElement.priority}`, "task":taskElement.task}
+                return {"priority": Number(taskElement.priority), "task":taskElement.task}
             }
         })
     }
    
 
     updatedTask = {"tasks": updatedData}
-    updatedTask.tasks.push({priority: priority, task:task});
+    updatedTask.tasks.push({priority: Number(priority), task:task});
     setTaskData(updatedTask);
     console.log(`Added task: "${task}" with priority ${priority}`);
 }
@@ -78,7 +78,8 @@ const list = () => {
         console.log(`There are no pending tasks!`);
         return;
     }
-    taskData.tasks.forEach(task => {
+    const sorted = [...taskData.tasks].sort((a, b) => Number(a.priority) - Number(b.priority));
+    sorted.forEach(task => {
         console.log(`${++j}. ${task.task} [${task.priority}]`);
     });
 }

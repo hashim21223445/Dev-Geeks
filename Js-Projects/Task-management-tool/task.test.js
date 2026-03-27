@@ -208,6 +208,31 @@ test("mark as done without providing a tasks number", () => {
   expect(received).toEqual(expect.stringContaining(expected));
 });
 
+test("list sorts tasks by priority ascending regardless of insertion order", () => {
+  // Add tasks in reverse priority order
+  execSync(tasksTxtCli("add", '3 "low priority"'));
+  execSync(tasksTxtCli("add", '1 "high priority"'));
+  execSync(tasksTxtCli("add", '2 "mid priority"'));
+
+  let expected = `1. high priority [1]\n2. mid priority [2]\n3. low priority [3]\n`;
+  let received = execSync(tasksTxtCli("ls")).toString("utf8");
+
+  expect(received).toEqual(expect.stringContaining(expected));
+});
+
+test("adding a task with a duplicate priority bumps the existing task's priority", () => {
+  execSync(tasksTxtCli("add", '2 "original"'));
+  execSync(tasksTxtCli("add", '2 "newcomer"'));
+
+  let received = execSync(tasksTxtCli("ls")).toString("utf8");
+
+  // newcomer takes priority 2, original is bumped to 3
+  expect(received).toEqual(expect.stringContaining("newcomer [2]"));
+  expect(received).toEqual(expect.stringContaining("original [3]"));
+  // Priority must be a number, not a string like "21"
+  expect(received).not.toEqual(expect.stringContaining("original [21]"));
+});
+
 test("report pending & completed tasks", () => {
   let tasks = [
     "the thing i need to do",
