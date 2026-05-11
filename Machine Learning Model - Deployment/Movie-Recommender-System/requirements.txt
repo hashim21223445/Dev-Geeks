@@ -20,7 +20,7 @@ mdurl==0.1.2
 numpy==1.25.1
 packaging==23.1
 pandas==1.5.3
-Pillow==12.1.1
+Pillow==12.2.0
 protobuf==5.29.6
 pyarrow==14.0.1
 pydeck==0.8.1b0
@@ -43,7 +43,7 @@ tornado==6.5.5
 typing_extensions==4.7.1
 tzdata==2023.3
 tzlocal==4.3.1
-urllib3==2.6.3
+urllib3==2.7.0
 validators==0.20.0
 watchdog==3.0.0
 zipp==3.19.1
