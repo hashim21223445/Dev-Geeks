@@ -1,7 +1,7 @@
-torch==2.8.0
+torch==2.12.1
 torchvision==0.13.0
 gradio==6.7.0
-pillow>=10.0.0 # not directly required, pinned by Snyk to avoid a vulnerability
-urllib3>=2.5.0 # not directly required, pinned by Snyk to avoid a vulnerability
+pillow>=12.3.0 # not directly required, pinned by Snyk to avoid a vulnerability
+urllib3>=2.7.0 # not directly required, pinned by Snyk to avoid a vulnerability
 requests>=2.32.2 # not directly required, pinned by Snyk to avoid a vulnerability
 numpy>=1.22.0 # not directly required, pinned by Snyk to avoid a vulnerability
