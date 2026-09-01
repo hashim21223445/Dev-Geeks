@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://yvrjprshr.github.io/movie-app",
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
     "gh-pages": "^6.2.0",
