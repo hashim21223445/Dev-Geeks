@@ -1,2 +1,2 @@
 Requests==2.33.0
-streamlit==1.37.0
+streamlit==1.54.0
